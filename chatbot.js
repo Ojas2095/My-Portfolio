@@ -15,7 +15,7 @@
     if (!fab || !panel) return;
 
     // ---- GEMINI CONFIG (Optional — works without it) ----
-    const GEMINI_API_KEY = 'AIzaSyB-H5_5EcvVpdNCvRrSghYxL_vrX3A1Dbg';
+    const GEMINI_API_KEY = 'Your api key here :D';
     const GEMINI_MODEL = 'gemini-1.5-flash';
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 
