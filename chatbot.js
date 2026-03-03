@@ -48,8 +48,7 @@
                 type: 'Remote',
                 highlights: [
                     'Redesigned the company website using React and Tailwind CSS',
-                    'Built user-facing interfaces for QA applications',
-                    'Worked with cross-functional teams to deliver features',
+                    'Built 8 user-facing QA interfaces serving 500+ daily users',
                     'Improved page load performance by 35% through code splitting',
                     'Implemented responsive design patterns for mobile-first approach'
                 ],
@@ -64,8 +63,8 @@
                     'Developed and maintained scalable full-stack web applications using the MERN stack',
                     'Engineered robust RESTful backend APIs with Node.js and Express',
                     'Built responsive, high-performance user interfaces with React and Tailwind CSS',
-                    'Collaborated with cross-functional teams to implement new features and resolve bugs',
-                    'Optimized database schemas and queries in MongoDB for faster data retrieval'
+                    'Collaborated with cross-functional teams to implement new features and resolve critical bugs',
+                    'Reduced average query time by 40% through MongoDB index optimization'
                 ],
                 tech: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS']
             }
@@ -81,14 +80,35 @@
             },
             {
                 name: 'SkillSwap',
-                description: 'Peer-to-peer skill exchange platform where users can teach and learn from each other. Full-stack web app built during a hackathon.',
+                description: 'Peer-to-peer skill exchange platform with 50+ registered users and a real-time matching algorithm. Full-stack web app.',
                 tech: ['React', 'Node.js', 'MongoDB'],
                 github: 'https://github.com/Ojas2095/SkillSwap',
                 highlight: 'Shows full-stack capability with MERN stack'
             },
             {
+                name: 'ColdEmailAI',
+                description: 'AI-powered automation sending personalized emails to 10-15 companies daily autonomously. Features A/B testing and a real-time analytics dashboard.',
+                tech: ['Next.js', 'Python', 'OpenRouter', 'SQLite'],
+                github: 'https://github.com/Ojas2095',
+                highlight: 'Flagship AI project demonstrating end-to-end automation and API integration'
+            },
+            {
+                name: 'AI Resume Reviewer',
+                description: 'Full-stack AI tool performing automatic resume analysis, skill gap extraction, ATS scoring, and GPT-powered coaching.',
+                tech: ['FastAPI', 'React', 'OpenAI API', 'NLP'],
+                github: 'https://github.com/Ojas2095',
+                highlight: 'Advanced deep-learning applied to text parsing and analysis'
+            },
+            {
+                name: 'GradTrack',
+                description: 'Mobile application to track SGPA/CGPA, academic attendance, and log placement activities natively.',
+                tech: ['React Native', 'Expo', 'TypeScript'],
+                github: 'https://github.com/Ojas2095',
+                highlight: 'Native mobile app demonstrating cross-platform development'
+            },
+            {
                 name: 'Medicare Dashboard',
-                description: 'Healthcare application with appointment booking, patient analytics, and authentication. Built during his internship at United Mentor.',
+                description: 'Healthcare application with appointment booking, patient analytics, and authentication. Built with React and Flask.',
                 tech: ['React', 'Flask', 'SQL Server'],
                 github: 'https://github.com/Ojas2095/MediCare-',
                 highlight: 'Real-world professional project from internship'
@@ -117,17 +137,17 @@
         ],
 
         skills: {
-            frontend: ['JavaScript ES6+', 'React', 'HTML5', 'CSS3', 'Tailwind CSS'],
-            backend: ['Node.js', 'Express', 'MongoDB', 'Flask', 'Python'],
-            tools: ['Git', 'GitHub', 'REST APIs', 'pandas', 'matplotlib'],
-            soft: ['Leadership', 'Problem Solving', 'Communication', 'Time Management', 'Teamwork', 'Networking']
+            frontend: ['JavaScript (ES6+)', 'TypeScript', 'React', 'Next.js', 'Tailwind CSS', 'HTML5 & CSS3'],
+            backend: ['Node.js', 'Express', 'Python', 'Flask', 'FastAPI'],
+            database: ['MongoDB', 'PostgreSQL', 'SQLite', 'SQL Server'],
+            mobile: ['Android Development', 'Kotlin', 'React Native', 'Expo'],
+            ai: ['LLM APIs (OpenRouter, Gemini, OpenAI)', 'NLP', 'Data Viz (pandas, matplotlib)'],
+            tools: ['Git', 'GitHub', 'REST APIs']
         },
 
         achievements: [
+            '100+ LeetCode problems solved',
             'Cleared internal round of Smart India Hackathon (SIH)',
-            'Participated in Google Gen AI Hackathon and built FactForge',
-            'Participated in Protorush Hackathon',
-            'Participated in CSA Hackathon',
             'Reached BGMI tournament semifinals in college',
             'Rubik\'s Cube average improved from 19.89s to 17.62s'
         ],
