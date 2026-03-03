@@ -5,101 +5,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojaswee Upadhyay - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary-color: #0f172a;
+            /* Slate 900 */
+            --secondary-color: #475569;
+            /* Slate 600 */
+            --accent-color: #2563eb;
+            /* Blue 600 */
+            --border-color: #e2e8f0;
+            /* Slate 200 */
+            --text-main: #1e293b;
+            /* Slate 800 */
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.5;
-            color: #000;
+            color: var(--text-main);
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 30px;
             background-color: #fff;
         }
 
-        h1 {
-            font-size: 26px;
-            font-weight: 900;
-            margin-bottom: 5px;
-            text-transform: uppercase;
+        header {
             text-align: center;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            text-transform: uppercase;
             letter-spacing: 1px;
+            color: var(--primary-color);
         }
 
         .contact-info {
-            text-align: center;
-            margin-bottom: 25px;
             font-size: 13px;
-            color: #333;
+            color: var(--secondary-color);
         }
 
         .contact-info a {
-            color: #333;
+            color: var(--secondary-color);
             text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: var(--secondary-color);
         }
 
         h2 {
-            font-size: 13px;
-            font-weight: 800;
+            font-size: 14px;
+            font-weight: 700;
             text-transform: uppercase;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 2px;
-            margin-top: 25px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 4px;
+            margin-top: 24px;
             margin-bottom: 12px;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
 
         .education-item {
-            font-size: 13px;
-            margin-bottom: 10px;
-        }
-
-        ul {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-            font-size: 13px;
-        }
-
-        .skills-list li {
+            font-size: 13.5px;
             margin-bottom: 6px;
         }
 
+        ul {
+            margin-top: 4px;
+            margin-bottom: 12px;
+            padding-left: 18px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 13.5px;
+        }
+
+        .skills-list li {
+            margin-bottom: 4px;
+        }
+
         p {
-            font-size: 13px;
+            font-size: 13.5px;
             margin-top: 0;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-align: justify;
         }
 
         .experience-title {
-            font-weight: bold;
-            font-size: 13px;
-            margin-bottom: 2px;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--primary-color);
+            display: flex;
+            justify-content: space-between;
         }
 
         .experience-subtitle {
             font-style: italic;
             font-size: 13px;
-            margin-bottom: 6px;
-            color: #333;
+            margin-bottom: 4px;
+            color: var(--secondary-color);
         }
 
         .experience-block {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
 
         .project-item {
             margin-bottom: 8px;
-            font-size: 13px;
+            font-size: 13.5px;
         }
 
-        /* Utility for spacing in skills list */
-        .spacer {
-            height: 10px;
+        .project-item strong {
+            color: var(--primary-color);
         }
 
         @media print {
