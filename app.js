@@ -26,7 +26,36 @@ document.addEventListener('DOMContentLoaded', () => {
   initCubeEasterEgg();
   initEasterEggs();
   initDestroySite();
+  initProjectFilters();
 });
+
+// ===================== PROJECT FILTERS =====================
+function initProjectFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project-card');
+  if (!filterBtns.length || !projects.length) return;
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      projects.forEach(project => {
+        if (filterValue === 'all' || project.getAttribute('data-category') === filterValue) {
+          project.classList.remove('hide');
+          // Add a small animation effect
+          project.style.animation = 'none';
+          project.offsetHeight; /* trigger reflow */
+          project.style.animation = 'fadeInUp 0.5s ease both';
+        } else {
+          project.classList.add('hide');
+        }
+      });
+    });
+  });
+}
 
 // ===================== BOOT LOADER =====================
 function initBootLoader() {

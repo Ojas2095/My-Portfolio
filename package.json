@@ -1,5 +1,25 @@
 {
   "dependencies": {
-    "matter-js": "^0.20.0"
-  }
+    "matter-js": "^0.20.0",
+    "puppeteer": "^24.37.5"
+  },
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ojas2095/My-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ojas2095/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ojas2095/My-Portfolio#readme"
 }
