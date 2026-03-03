@@ -5,157 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojaswee Upadhyay - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.5;
-            color: #111827;
-            max-width: 850px;
+            color: #000;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 40px 30px;
+            padding: 40px 20px;
             background-color: #fff;
         }
 
-        header {
-            text-align: center;
-            margin-bottom: 24px;
-        }
-
         h1 {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 8px;
-            letter-spacing: 0.5px;
-            color: #111827;
+            font-size: 26px;
+            font-weight: 900;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 1px;
         }
 
         .contact-info {
-            font-size: 14.5px;
-            color: #4b5563;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+            color: #333;
         }
 
         .contact-info a {
-            color: #2563eb;
+            color: #333;
             text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            margin-bottom: 20px;
         }
 
         h2 {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 13px;
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #111827;
-            border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 4px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 2px;
+            margin-top: 25px;
             margin-bottom: 12px;
+            letter-spacing: 1px;
         }
 
-        .item-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 4px;
-        }
-
-        .item-title {
-            font-weight: 600;
-            font-size: 15px;
-            color: #111827;
-        }
-
-        .item-subtitle {
-            font-weight: 500;
-            font-size: 14.5px;
-            color: #4b5563;
-            margin-bottom: 6px;
-        }
-
-        .item-date {
-            font-weight: 500;
-            font-size: 14.5px;
-            color: #4b5563;
-            white-space: nowrap;
+        .education-item {
+            font-size: 13px;
+            margin-bottom: 10px;
         }
 
         ul {
-            margin-bottom: 12px;
-            padding-left: 18px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 20px;
         }
 
         li {
-            margin-bottom: 6px;
-            font-size: 14.5px;
-            color: #374151;
-            line-height: 1.6;
-        }
-
-        .skills-list,
-        .education-item {
-            font-size: 14.5px;
             margin-bottom: 8px;
-            color: #374151;
-            line-height: 1.6;
+            font-size: 13px;
         }
 
-        .skills-category {
-            font-weight: 600;
-            color: #111827;
-            width: 160px;
-            display: inline-block;
+        .skills-list li {
+            margin-bottom: 6px;
+        }
+
+        p {
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .experience-title {
+            font-weight: bold;
+            font-size: 13px;
+            margin-bottom: 2px;
+        }
+
+        .experience-subtitle {
+            font-style: italic;
+            font-size: 13px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .experience-block {
+            margin-bottom: 15px;
         }
 
         .project-item {
             margin-bottom: 8px;
-            font-size: 14.5px;
-            line-height: 1.6;
-            color: #374151;
+            font-size: 13px;
         }
 
-        .project-item strong {
-            color: #111827;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 14.5px;
-            color: #374151;
-            line-height: 1.6;
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-
-        .experience-entry {
-            margin-bottom: 16px;
+        /* Utility for spacing in skills list */
+        .spacer {
+            height: 10px;
         }
 
         @media print {
             body {
-                padding: 10px 0;
-            }
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-
-            h2 {
-                border-bottom: 2px solid #000;
+                padding: 0;
             }
         }
     </style>
@@ -175,7 +124,7 @@
     </header>
 
     <section>
-        <h2>Career Objective</h2>
+        <h2>CAREER OBJECTIVE</h2>
         <p>
             Innovative React Developer with a comprehensive background in building and maintaining responsive websites.
             Proficient in modern JavaScript libraries, HTML5, CSS and progressive web applications. Skilled in
@@ -186,52 +135,57 @@
     </section>
 
     <section>
-        <h2>Education</h2>
+        <h2>EDUCATION</h2>
         <div class="education-item">
-            <strong>B.Tech (Computer Science)</strong> — University of Petroleum and Energy Studies, Dehradun — Expected
-            05/2028
+            <strong>Class 10th:</strong> Academic Global School, CBSE — 2022 — 91.28%
         </div>
         <div class="education-item">
             <strong>Class 12th:</strong> Academic Global School, CBSE — 2024 — 79.33%
         </div>
         <div class="education-item">
-            <strong>Class 10th:</strong> Academic Global School, CBSE — 2022 — 91.28%
+            <strong>B.Tech (Computer Science)</strong> — University of Petroleum and Energy Studies, Dehradun — Expected
+            05/2028
         </div>
     </section>
 
     <section>
-        <h2>Technical Skills</h2>
-        <div class="skills-list">
-            <span class="skills-category">Frontend:</span> JavaScript (ES6+), React (hooks, router), HTML5 & CSS3,
-            Responsive UI, Tailwind CSS
-        </div>
-        <div class="skills-list">
-            <span class="skills-category">Backend & Databases:</span> Node.js / Express (basics), REST APIs, MongoDB /
-            SQL basics, Flask / Python basics
-        </div>
-        <div class="skills-list">
-            <span class="skills-category">Data & Tools:</span> pandas, matplotlib, seaborn (Data viz / EDA), Git &
-            version control, Debugging & performance, Testing & browser tools
-        </div>
+        <h2>TECHNICAL SKILLS</h2>
+        <ul class="skills-list">
+            <li>JavaScript, ES6+</li>
+            <li>React (hooks, router)</li>
+            <li>HTML5 & CSS3, Responsive UI</li>
+            <li>Tailwind CSS</li>
+            <li>Node.js / Express (basics)</li>
+            <li>REST APIs</li>
+            <div class="spacer"></div>
+            <li>MongoDB / SQL basics</li>
+            <li>Flask / Python basics</li>
+            <li>pandas, matplotlib, seaborn (Data viz / EDA)</li>
+            <li>Git & version control</li>
+            <li>Debugging & performance</li>
+            <li>Testing & browser tools</li>
+        </ul>
     </section>
 
     <section>
-        <h2>Soft Skills</h2>
-        <div class="skills-list">
-            Teamwork & Collaboration, Adaptability, Problem Solving, Time Management, Leadership, Effective
-            Communication
-        </div>
+        <h2>SOFT SKILLS</h2>
+        <ul class="skills-list">
+            <li>Teamwork & Collaboration</li>
+            <li>Adaptability</li>
+            <li>Problem Solving</li>
+            <div class="spacer"></div>
+            <li>Time Management</li>
+            <li>Leadership</li>
+            <li>Effective Communication</li>
+        </ul>
     </section>
 
     <section>
-        <h2>Experience</h2>
+        <h2>EXPERIENCE</h2>
 
-        <div>
-            <div class="item-header">
-                <span class="item-title">React Developer Intern</span>
-                <span class="item-date">06/2025 – Present</span>
-            </div>
-            <div class="item-subtitle">Sentienla QualityAI — Remote</div>
+        <div class="experience-block">
+            <div class="experience-title">React Developer Intern</div>
+            <div class="experience-subtitle">Sentienla QualityAI — Remote &bull; 06/2025 – Present</div>
             <ul>
                 <li>Redesigned company website using React and Tailwind for better usability and performance.</li>
                 <li>Built user-facing interfaces for quality-assurance applications and dashboards.</li>
@@ -239,12 +193,9 @@
             </ul>
         </div>
 
-        <div>
-            <div class="item-header">
-                <span class="item-title">Full Stack Web Developer Intern</span>
-                <span class="item-date">05/2025 – 08/2025</span>
-            </div>
-            <div class="item-subtitle">United Mentor</div>
+        <div class="experience-block">
+            <div class="experience-title">Full Stack Web Developer Intern</div>
+            <div class="experience-subtitle">United Mentor — 05/2025 – 08/2025</div>
             <ul>
                 <li>Developed scalable backend APIs and responsive UI using React and MongoDB.</li>
                 <li>Contributed to Medicare Dashboard: booking, authentication and analytics modules.</li>
@@ -254,33 +205,29 @@
     </section>
 
     <section>
-        <h2>Projects</h2>
+        <h2>PROJECTS</h2>
         <ul>
-            <li class="project-item"><strong>AI Powered Resume Reviewer</strong> — FastAPI, React. Full-stack AI tool
-                performing automatic resume analysis, skill gap extraction, ATS scoring, and GPT-powered coaching.</li>
-            <li class="project-item"><strong>ColdEmailAI</strong> — Python, OpenRouter API. Intelligent agent capable of
-                generating highly personalized cold emails for technical internship outreach.</li>
-            <li class="project-item"><strong>GradTrack</strong> — React Native. Mobile application to track SGPA/CGPA,
-                academic attendance, and log placement activities natively.</li>
-            <li class="project-item"><strong>Spotify-Style Music Player</strong> — Full-stack (React + Flask). Jamendo
-                API integration; playlists, search, shuffle/repeat.</li>
+            <li class="project-item"><strong>AI Powered Resume Reviewer</strong> — FastAPI, React, OpenAI API, NLP.
+                Full-stack AI tool performing automatic resume analysis, skill gap extraction, ATS scoring, and
+                GPT-powered coaching.</li>
+            <li class="project-item"><strong>ColdEmailAI (AI Outreach Agent)</strong> — Python, SQLite, OpenRouter API.
+                Intelligent automation agent capable of generating highly personalized cold emails for technical
+                internship outreach.</li>
+            <li class="project-item"><strong>GradTrack — SGPA & Placement Companion</strong> — React Native / Expo.
+                Mobile application to track SGPA/CGPA, academic attendance, and log placement activities natively.</li>
+            <li class="project-item"><strong>FactForge (Google Gen AI Hackathon)</strong> — Python, Google Gemini.
+                AI-driven fact-checking and verification tool utilizing advanced LLMs.</li>
+            <li class="project-item"><strong>SkillSwap</strong> — MongoDB, Express, React, Node.js. Peer-to-peer skill
+                exchange platform allowing users to barter expertise.</li>
             <li class="project-item"><strong>Medicare Dashboard</strong> — Healthcare app (React + Flask + SQL Server):
                 booking, analytics, auth.</li>
-            <li class="project-item"><strong>Advanced Weather Dashboard</strong> — Weather API, autocomplete city
-                search, dynamic backgrounds, recent searches.</li>
-            <li class="project-item"><strong>Tic Tac Toe Game</strong> — Python backend + React frontend with
-                multiplayer logic.</li>
-            <li class="project-item"><strong>Secure Data Processing Tool</strong> — File upload, transformations,
-                preview and secure download.</li>
-            <li class="project-item"><strong>SuperMall Web App</strong> — Node.js + MongoDB: authentication & user
-                flows.</li>
-            <li class="project-item"><strong>FactForge</strong> — AI-driven fact verification tool (Python, Google
-                Gemini) built during Google Gen AI Hackathon.</li>
+            <li class="project-item"><strong>Spotify-Style Music Player</strong> — Full-stack (React + Flask). Jamendo
+                API integration; playlists, search, shuffle/repeat.</li>
         </ul>
     </section>
 
     <section>
-        <h2>Certifications & Hackathons</h2>
+        <h2>CERTIFICATIONS & HACKATHONS</h2>
         <ul>
             <li>Cleared internal round — Smart India Hackathon (SIH)</li>
             <li>CSA Hackathon — UPES (participant)</li>
@@ -293,7 +240,7 @@
     </section>
 
     <section>
-        <h2>Position of Responsibility</h2>
+        <h2>POSITION OF RESPONSIBILITY</h2>
         <ul>
             <li>Technical Core — Contributor, GDG UPES</li>
             <li>Events Member, Sphurit UPES</li>
@@ -301,7 +248,7 @@
     </section>
 
     <section>
-        <h2>Achievements</h2>
+        <h2>ACHIEVEMENTS</h2>
         <ul>
             <li>Reached semifinals in BGMI college tournament</li>
             <li>Improved Rubik’s Cube average from 19.89s to 17.62s</li>
