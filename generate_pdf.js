@@ -19,9 +19,9 @@ const path = require('path');
             format: 'A4',
             printBackground: true,
             margin: {
-                top: '0px',
+                top: '10px',
                 right: '0px',
-                bottom: '0px',
+                bottom: '10px',
                 left: '0px'
             }
         });
