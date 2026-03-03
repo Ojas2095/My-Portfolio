@@ -5,109 +5,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojaswee Upadhyay - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.5;
-            color: #333;
-            max-width: 800px;
+            color: #111827;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 40px 30px;
             background-color: #fff;
         }
 
-        h1 {
-            font-size: 28px;
-            margin-bottom: 5px;
-            text-transform: uppercase;
+        header {
             text-align: center;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+            color: #111827;
         }
 
         .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 14px;
+            font-size: 14.5px;
+            color: #4b5563;
         }
 
         .contact-info a {
-            color: #0056b3;
+            color: #2563eb;
             text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 20px;
         }
 
         h2 {
             font-size: 16px;
+            font-weight: 700;
             text-transform: uppercase;
-            border-bottom: 2px solid #333;
-            padding-bottom: 2px;
-            margin-top: 20px;
-            margin-bottom: 15px;
+            letter-spacing: 1px;
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 4px;
+            margin-bottom: 12px;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
+            align-items: flex-end;
+            margin-bottom: 4px;
         }
 
         .item-title {
-            font-weight: bold;
+            font-weight: 600;
             font-size: 15px;
+            color: #111827;
         }
 
         .item-subtitle {
-            font-style: italic;
-            font-size: 14px;
-            color: #444;
-            margin-bottom: 5px;
+            font-weight: 500;
+            font-size: 14.5px;
+            color: #4b5563;
+            margin-bottom: 6px;
         }
 
         .item-date {
-            font-size: 14px;
-            color: #555;
+            font-weight: 500;
+            font-size: 14.5px;
+            color: #4b5563;
             white-space: nowrap;
         }
 
         ul {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            padding-left: 20px;
+            margin-bottom: 12px;
+            padding-left: 18px;
         }
 
         li {
-            margin-bottom: 4px;
-            font-size: 14px;
+            margin-bottom: 6px;
+            font-size: 14.5px;
+            color: #374151;
+            line-height: 1.6;
         }
 
         .skills-list,
         .education-item {
-            font-size: 14px;
+            font-size: 14.5px;
             margin-bottom: 8px;
+            color: #374151;
+            line-height: 1.6;
         }
 
         .skills-category {
-            font-weight: bold;
+            font-weight: 600;
+            color: #111827;
+            width: 160px;
+            display: inline-block;
         }
 
         .project-item {
-            margin-bottom: 15px;
-            font-size: 14px;
+            margin-bottom: 8px;
+            font-size: 14.5px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .project-item strong {
+            color: #111827;
+            font-weight: 600;
         }
 
         p {
-            font-size: 14px;
-            margin-top: 0;
-            margin-bottom: 15px;
+            font-size: 14.5px;
+            color: #374151;
+            line-height: 1.6;
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+
+        .experience-entry {
+            margin-bottom: 16px;
         }
 
         @media print {
             body {
-                padding: 0;
+                padding: 10px 0;
             }
 
             a {
                 text-decoration: none;
                 color: #000;
+            }
+
+            h2 {
+                border-bottom: 2px solid #000;
             }
         }
     </style>
