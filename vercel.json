@@ -1,0 +1,4 @@
+{
+  "installCommand": "echo 'Skipping npm install - static site'",
+  "buildCommand": "echo 'No build required'"
+}
