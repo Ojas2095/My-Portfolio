@@ -8,11 +8,24 @@
   <link rel="icon" type="image/png" href="favicon.png" />
   <meta name="description"
     content="Ojaswee Upadhyay — Frontend Developer, React specialist, problem solver. Explore projects, skills, and get in touch." />
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Ojaswee Upadhyay — Developer Portfolio" />
+  <meta property="og:description" content="Ojaswee Upadhyay — Frontend Developer, React specialist, problem solver. Explore projects, skills, and get in touch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="avatar.png" />
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ojaswee Upadhyay — Developer Portfolio" />
+  <meta name="twitter:description" content="Ojaswee Upadhyay — Frontend Developer, React specialist, problem solver. Explore projects, skills, and get in touch." />
+  <meta name="twitter:image" content="avatar.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -139,7 +152,7 @@
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn-glow">View Projects</a>
-        <a href="OjasweeUpadhyay_2025_Resume.pdf" download class="btn-outline">Download Resume</a>
+        <a href="Resume_Ojaswee.pdf" download class="btn-outline">Download Resume</a>
       </div>
       <div class="hero-scroll-indicator">
         <span>Scroll to explore</span>
@@ -201,6 +214,25 @@
         <div class="timeline-item glass-card" data-expandable>
           <div class="timeline-dot"></div>
           <div class="timeline-header">
+            <div class="timeline-date">02/2026 – Present</div>
+            <h3>High-Impact Open Source Contributor</h3>
+            <p class="timeline-company">ZIO, Tari Aiteen, TypeORM</p>
+            <span class="expand-hint">Click to expand ▾</span>
+          </div>
+          <div class="timeline-details">
+            <ul>
+              <li><strong>ZIO ($4,000 Bounty):</strong> Resolved CI pipeline failures and bot-flagged logic errors in ZIO/ZIO-Blocks.</li>
+              <li><strong>Tari Aiteen (60,000 XTM Bounty):</strong> Implemented a robust automated i18n translation pipeline.</li>
+              <li><strong>TypeORM ($120 Bounty):</strong> Troubleshooting dependency-related test failures and non-destructive SQL migrations.</li>
+            </ul>
+            <div class="timeline-tech-tags">
+              <span>Scala</span><span>ZIO</span><span>TypeScript</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item glass-card" data-expandable>
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
             <div class="timeline-date">06/2025 – 08/2025</div>
             <h3>React Developer Intern</h3>
             <p class="timeline-company">Sentienla QualityAI · Remote</p>
@@ -254,72 +286,66 @@
         <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
       </div>
       <div class="projects-grid">
-        <a href="https://github.com/Ojas2095/FactForge" target="_blank" class="project-card glass-card"
+
+        <div class="project-card glass-card"
+          data-category="ai" data-tilt>
+          <div class="project-icon">⚡</div>
+          <h3>AI Software Compiler</h3>
+          <p>Compiles natural language into validated, executable software configurations.</p>
+          <div class="project-tech"><span>FastAPI</span><span>Gemini 2.0</span><span>Next.js</span></div>
+          <div class="project-links-row">
+            <a href="https://github.com/Ojas2095/AI_COMPILER_TASK" target="_blank" class="btn-outline btn-sm">🐙 GitHub</a>
+            <a href="#" target="_blank" class="btn-outline btn-sm">🌐 Live Demo</a>
+          </div>
+        </div>
+        <div class="project-card glass-card"
+          data-category="fullstack" data-tilt>
+          <div class="project-icon">🌌</div>
+          <h3>MorphOS</h3>
+          <p>Generative Operating System. Built at MLH AI Hackfest.</p>
+          <div class="project-tech"><span>Next.js</span><span>Three.js</span><span>Gemini Vision</span></div>
+          <div class="project-links-row">
+            <a href="https://github.com/Ojas2095/morphos" target="_blank" class="btn-outline btn-sm">🐙 GitHub</a>
+            <a href="#" target="_blank" class="btn-outline btn-sm">🌐 Live Demo</a>
+          </div>
+        </div>
+        <a href="https://github.com/Ojas2095/FDG-CNN" target="_blank" class="project-card glass-card"
           data-category="ai" data-tilt>
           <div class="project-icon">🧠</div>
-          <h3>FactForge</h3>
-          <p>AI-powered fact-checking tool built for the Google Gen AI Hackathon</p>
-          <div class="project-tech"><span>Gen AI</span><span>Google Gemini</span><span>Python</span></div>
+          <h3>FDG-CNN</h3>
+          <p>Federated Domain-Generalizable CNN achieving 94.42% accuracy on unseen domains.</p>
+          <div class="project-tech"><span>Federated Learning</span><span>MixStyle</span><span>DANN</span></div>
           <div class="project-link-arrow">→</div>
         </a>
-        <a href="https://github.com/Ojas2095/SkillSwap" target="_blank" class="project-card glass-card"
-          data-category="fullstack" data-tilt>
-          <div class="project-icon">🔄</div>
-          <h3>SkillSwap</h3>
-          <p>Peer-to-peer skill exchange platform with 50+ registered users</p>
-          <div class="project-tech"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
-          <div class="project-link-arrow">→</div>
-        </a>
-        <a href="https://github.com/Ojas2095/MediCare-" target="_blank" class="project-card glass-card"
-          data-category="fullstack" data-tilt>
-          <div class="project-icon">🏥</div>
-          <h3>Medicare Dashboard</h3>
-          <p>Healthcare app with booking, analytics, and authentication</p>
-          <div class="project-tech"><span>React</span><span>Flask</span><span>SQL Server</span></div>
-          <div class="project-link-arrow">→</div>
-        </a>
-        <a href="https://github.com/Ojas2095/Voice-Assistant-" target="_blank" class="project-card glass-card"
+        <a href="https://github.com/Ojas2095/doc-verify" target="_blank" class="project-card glass-card"
           data-category="ai" data-tilt>
-          <div class="project-icon">🎙️</div>
-          <h3>Voice Assistant</h3>
-          <p>Browser-based voice assistant with speech recognition & synthesis</p>
-          <div class="project-tech"><span>JavaScript</span><span>Web Speech API</span></div>
-          <div class="project-link-arrow">→</div>
-        </a>
-        <a href="https://github.com/Ojas2095/meeting-summarizer" target="_blank" class="project-card glass-card"
-          data-category="ai" data-tilt>
-          <div class="project-icon">📝</div>
-          <h3>Meeting Summarizer</h3>
-          <p>AI-driven tool that transcribes and summarizes meeting recordings</p>
-          <div class="project-tech"><span>JavaScript</span><span>AI / NLP</span></div>
-          <div class="project-link-arrow">→</div>
-        </a>
-        <a href="https://github.com/Ojas2095/SpotifyClone" target="_blank" class="project-card glass-card"
-          data-category="fullstack" data-tilt>
-          <div class="project-icon">🎵</div>
-          <h3>Spotify Clone</h3>
-          <p>Full-stack music player with playlists, search, shuffle & repeat</p>
-          <div class="project-tech"><span>React</span><span>Flask</span><span>Jamendo API</span></div>
-          <div class="project-link-arrow">→</div>
-        </a>
-        <a href="https://github.com/Ojas2095" target="_blank" class="project-card glass-card" data-category="ai"
-          data-tilt>
           <div class="project-icon">📄</div>
+          <h3>DocVerify</h3>
+          <p>Offline document verification system using OCR and local LLMs.</p>
+          <div class="project-tech"><span>Python</span><span>Flask</span><span>Ollama</span></div>
+          <div class="project-link-arrow">→</div>
+        </a>
+        <div class="project-card glass-card"
+          data-category="ai" data-tilt>
+          <div class="project-icon">📧</div>
+          <h3>ColdEmailAI</h3>
+          <p>AI-powered automation sending personalized emails to 10-15 companies daily.</p>
+          <div class="project-tech"><span>Next.js</span><span>Python</span><span>OpenRouter</span></div>
+          <div class="project-links-row">
+            <a href="https://github.com/Ojas2095/ColdEmailAI" target="_blank" class="btn-outline btn-sm">🐙 GitHub</a>
+            <a href="#" target="_blank" class="btn-outline btn-sm">🌐 Live Demo</a>
+          </div>
+        </div>
+        <a href="https://github.com/Ojas2095/AI_Resume_Analyser" target="_blank" class="project-card glass-card" 
+          data-category="ai" data-tilt>
+          <div class="project-icon">📑</div>
           <h3>AI Resume Reviewer</h3>
           <p>AI-powered resume analysis, matching, and generation tool</p>
           <div class="project-tech"><span>FastAPI</span><span>React</span><span>OpenAI API</span></div>
           <div class="project-link-arrow">→</div>
         </a>
-        <a href="https://github.com/Ojas2095" target="_blank" class="project-card glass-card" data-category="ai"
-          data-tilt>
-          <div class="project-icon">📧</div>
-          <h3>ColdEmailAI</h3>
-          <p>AI-powered automation sending personalized emails to 10-15 companies daily.</p>
-          <div class="project-tech"><span>Next.js</span><span>Python</span><span>OpenRouter</span></div>
-          <div class="project-link-arrow">→</div>
-        </a>
-        <a href="https://github.com/Ojas2095" target="_blank" class="project-card glass-card" data-category="mobile"
-          data-tilt>
+        <a href="https://github.com/Ojas2095/GradTrack" target="_blank" class="project-card glass-card" 
+          data-category="mobile" data-tilt>
           <div class="project-icon">🎓</div>
           <h3>GradTrack</h3>
           <p>Mobile app for tracking SGPA/CGPA, attendance, and placements</p>
@@ -375,22 +401,13 @@ console.log('2 + 2 =', 2 + 2);
             <img src="avatar.png" alt="Ojas2095" class="github-avatar" />
             <div>
               <div class="github-username">Ojas2095</div>
-              <div class="github-bio">Building cool stuff with code 🚀</div>
+            <div class="github-bio">Building cool stuff with code 🚀</div>
             </div>
           </div>
           <a href="https://github.com/Ojas2095" target="_blank" class="btn-outline btn-sm">View Profile →</a>
         </div>
-        <div class="github-heatmap" id="githubHeatmap">
-          <!-- Generated by JS -->
-        </div>
-        <div class="github-legend">
-          <span>Less</span>
-          <div class="legend-cell" style="opacity:0.15"></div>
-          <div class="legend-cell" style="opacity:0.35"></div>
-          <div class="legend-cell" style="opacity:0.6"></div>
-          <div class="legend-cell" style="opacity:0.85"></div>
-          <div class="legend-cell" style="opacity:1"></div>
-          <span>More</span>
+        <div class="github-heatmap calendar">
+          Loading GitHub Contributions...
         </div>
         <div class="github-stats" id="githubStats">
           <div class="gh-stat"><span class="gh-stat-num" id="ghRepos">—</span><span class="gh-stat-label">Repos</span>
@@ -437,6 +454,8 @@ console.log('2 + 2 =', 2 + 2);
             <span class="skill-tag" data-level="80">REST APIs</span>
             <span class="skill-tag" data-level="65">pandas</span>
             <span class="skill-tag" data-level="65">matplotlib</span>
+            <span class="skill-tag" data-level="75">Federated Learning</span>
+            <span class="skill-tag" data-level="80">Domain Generalization</span>
           </div>
         </div>
         <div class="skill-group">
@@ -457,6 +476,12 @@ console.log('2 + 2 =', 2 + 2);
     <div class="section-container">
       <h2 class="section-title"><span class="title-number">07.</span> Achievements</h2>
       <div class="achievements-grid">
+        <div class="achievement-card glass-card">
+          <div class="achievement-icon">💸</div>
+          <h3>Open Source Bounties</h3>
+          <p>ZIO ($4,000), Tari (60K XTM), TypeORM</p>
+        </div>
+
         <div class="achievement-card glass-card">
           <div class="achievement-icon">🏆</div>
           <h3>Smart India Hackathon</h3>
@@ -610,7 +635,7 @@ console.log('2 + 2 =', 2 + 2);
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Ojaswee Upadhyay. Designed & built with ☕ and curiosity.</p>
+    <p>&copy; 2026 Ojaswee Upadhyay. Designed & built with ☕ and curiosity.</p>
     <p class="footer-hint">Press <kbd>Ctrl+K</kbd> to open the command palette</p>
     <button id="destroyBtn" class="btn-outline"
       style="margin-top: 15px; border-color: #ef4444; color: #ef4444; padding: 6px 16px; font-size: 0.8rem;">🧨 Do Not
@@ -644,10 +669,16 @@ console.log('2 + 2 =', 2 + 2);
       <button id="chatSend" aria-label="Send">➤</button>
     </div>
   </div>
+  <!-- Theme Toggle -->
+  <button class="theme-toggle floating-btn" id="themeToggle" aria-label="Toggle Dark/Light Mode">
+    <span class="theme-icon" id="themeIcon">☀️</span>
+  </button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
-  <script src="app.js"></script>
-  <script src="chatbot.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
   <script src="contact.js"></script>
+  <script src="chatbot.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

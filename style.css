@@ -2100,3 +2100,68 @@ img {
     grid-template-columns: 1fr;
   }
 }
+/* ===================== THEME TOGGLE & PROJECT LINKS ===================== */
+.theme-toggle {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-glass);
+  color: var(--text-primary);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: var(--transition);
+  cursor: none;
+}
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--cyan-glow);
+  border-color: var(--cyan);
+}
+
+.project-links-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+}
+.project-card h3, .project-card p, .project-tech, .project-links-row {
+  position: relative;
+  z-index: 2;
+}
+
+/* GitHub Calendar Dark Mode Support */
+[data-theme="dark"] .calendar .graph-svg-tip {
+  background: #111;
+  color: #fff;
+}
+[data-theme="dark"] .calendar text.wday,
+[data-theme="dark"] .calendar text.month {
+  fill: var(--text-muted);
+}
+[data-theme="dark"] .calendar .ContributionCalendar-day[data-level="0"] {
+  fill: #161b22;
+}
+[data-theme="dark"] .calendar .ContributionCalendar-day[data-level="1"] {
+  fill: #0e4429;
+}
+[data-theme="dark"] .calendar .ContributionCalendar-day[data-level="2"] {
+  fill: #006d32;
+}
+[data-theme="dark"] .calendar .ContributionCalendar-day[data-level="3"] {
+  fill: #26a641;
+}
+[data-theme="dark"] .calendar .ContributionCalendar-day[data-level="4"] {
+  fill: #39d353;
+}
+

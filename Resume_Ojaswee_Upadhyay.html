@@ -1,291 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ojaswee Upadhyay - Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0f172a;
-            /* Slate 900 */
-            --secondary-color: #475569;
-            /* Slate 600 */
-            --accent-color: #2563eb;
-            /* Blue 600 */
-            --border-color: #e2e8f0;
-            /* Slate 200 */
-            --text-main: #1e293b;
-            /* Slate 800 */
+            --text-main: #000000;
+            --text-light: #333333;
+            --link-color: #000000;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.5;
+            font-family: 'Inter', Arial, sans-serif;
+            line-height: 1.35;
             color: var(--text-main);
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 30px;
+            padding: 24px 32px;
+            font-size: 11pt;
             background-color: #fff;
         }
 
         header {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 12px;
         }
 
         h1 {
-            font-size: 28px;
-            font-weight: 800;
-            margin-bottom: 4px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--primary-color);
-        }
-
-        .contact-info {
-            font-size: 13px;
-            color: var(--secondary-color);
-        }
-
-        .contact-info a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
-        }
-
-        .contact-info a:hover {
-            border-bottom-color: var(--secondary-color);
-        }
-
-        h2 {
-            font-size: 14px;
+            font-size: 22pt;
             font-weight: 700;
-            text-transform: uppercase;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 4px;
-            margin-top: 24px;
-            margin-bottom: 12px;
+            margin-bottom: 4px;
             letter-spacing: 0.5px;
         }
 
-        .education-item {
-            font-size: 13.5px;
-            margin-bottom: 6px;
+        .contact-info {
+            font-size: 10pt;
+            color: var(--text-light);
+        }
+
+        .contact-info a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 11pt;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 10pt;
+        }
+
+        .item-date {
+            font-size: 10pt;
+            text-align: right;
+            white-space: nowrap;
         }
 
         ul {
-            margin-top: 4px;
-            margin-bottom: 12px;
-            padding-left: 18px;
+            padding-left: 20px;
+            margin-bottom: 8px;
         }
 
         li {
-            margin-bottom: 4px;
-            font-size: 13.5px;
+            font-size: 10.5pt;
+            margin-bottom: 3px;
         }
 
-        .skills-list li {
-            margin-bottom: 4px;
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 100%;
+            gap: 4px;
+            font-size: 10.5pt;
         }
-
-        p {
-            font-size: 13.5px;
-            margin-top: 0;
-            margin-bottom: 12px;
-            text-align: justify;
-        }
-
-        .experience-title {
-            font-weight: 700;
-            font-size: 14px;
-            color: var(--primary-color);
+        
+        .skills-row {
             display: flex;
-            justify-content: space-between;
+        }
+        
+        .skills-category {
+            font-weight: 600;
+            width: 90px;
+            flex-shrink: 0;
         }
 
-        .experience-subtitle {
+        .project-title {
+            font-weight: 600;
+        }
+        
+        .project-tech {
             font-style: italic;
-            font-size: 13px;
-            margin-bottom: 4px;
-            color: var(--secondary-color);
-        }
-
-        .experience-block {
-            margin-bottom: 16px;
-        }
-
-        .project-item {
-            margin-bottom: 8px;
-            font-size: 13.5px;
-        }
-
-        .project-item strong {
-            color: var(--primary-color);
+            font-size: 10pt;
         }
 
         @media print {
             body {
-                padding: 0;
+                padding: 0.5in;
+                -webkit-print-color-adjust: exact;
             }
-
-            .experience-block,
-            .project-item,
-            .education-item {
-                page-break-inside: avoid;
-            }
-
-            h2 {
-                page-break-after: avoid;
+            @page {
+                margin: 0;
+                size: letter;
             }
         }
     </style>
 </head>
-
 <body>
 
     <header>
         <h1>OJASWEE UPADHYAY</h1>
         <div class="contact-info">
-            Gorakhpur, India 273003 &bull; +91 79855 48606 &bull; <a
-                href="mailto:ojaswee2095@gmail.com">ojaswee2095@gmail.com</a><br>
-            <a href="https://linkedin.com/in/ojaswee-upadhyay-79a041320/" target="_blank">LinkedIn</a> &bull;
-            <a href="https://github.com/Ojas2095" target="_blank">GitHub</a> &bull;
-            <a href="https://leetcode.com/u/coder209/" target="_blank">LeetCode</a>
+            +91 79855 48606 &nbsp;|&nbsp; <a href="mailto:ojaswee2095@gmail.com">ojaswee2095@gmail.com</a> &nbsp;|&nbsp; 
+            <a href="https://linkedin.com/in/ojaswee-upadhyay-79a041320/">linkedin.com/in/ojaswee-upadhyay-79a041320</a> &nbsp;|&nbsp; 
+            <a href="https://github.com/Ojas2095">github.com/Ojas2095</a>
         </div>
     </header>
 
     <section>
-        <h2>TECHNICAL SUMMARY</h2>
-        <p>
-            Full-stack developer (React, Next.js, Node.js, Python, Kotlin) with experience building AI-powered systems,
-            REST APIs, and production web applications.
-        </p>
-    </section>
-
-    <section>
         <h2>EDUCATION</h2>
-        <div class="education-item">
-            <strong>Class 10th:</strong> Academic Global School, CBSE — 2022 — 91.28%
+        <div class="item-header">
+            <div>
+                <span class="item-title">University of Petroleum and Energy Studies (UPES)</span>, Dehradun
+            </div>
+            <div class="item-date">Expected May 2028</div>
         </div>
-        <div class="education-item">
-            <strong>Class 12th:</strong> Academic Global School, CBSE — 2024 — 79.33%
-        </div>
-        <div class="education-item">
-            <strong>B.Tech (Computer Science)</strong> — University of Petroleum and Energy Studies, Dehradun — Expected
-            05/2028
-        </div>
+        <div>B.Tech in Computer Science</div>
     </section>
 
     <section>
         <h2>TECHNICAL SKILLS</h2>
-        <ul class="skills-list">
-            <li>JavaScript (ES6+), TypeScript, Next.js, React</li>
-            <li>HTML5 & CSS3, Tailwind CSS</li>
-            <li>Node.js / Express</li>
-            <li>REST APIs & LLM APIs (OpenRouter, Gemini, OpenAI)</li>
-            <div class="spacer"></div>
-            <li>MongoDB, PostgreSQL, SQLite, SQL basics</li>
-            <li>Python / Flask</li>
-            <li>Android Development (Kotlin / React Native / Expo)</li>
-            <li>pandas, matplotlib, seaborn (Data viz / EDA)</li>
-            <li>Git, Version Control, Debugging & Performance</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>SOFT SKILLS</h2>
-        <ul class="skills-list">
-            <li>Teamwork & Collaboration</li>
-            <li>Adaptability</li>
-            <li>Problem Solving</li>
-            <div class="spacer"></div>
-            <li>Time Management</li>
-            <li>Leadership</li>
-            <li>Effective Communication</li>
-        </ul>
+        <div class="skills-grid">
+            <div class="skills-row">
+                <span class="skills-category">Languages:</span>
+                <span>JavaScript/TypeScript, Python, Scala, Kotlin, SQL, Dart, Java</span>
+            </div>
+            <div class="skills-row">
+                <span class="skills-category">Frameworks:</span>
+                <span>React, Next.js, Node.js, Express, FastAPI, Flask, React Native, Expo, Three.js</span>
+            </div>
+            <div class="skills-row">
+                <span class="skills-category">Tools & DBs:</span>
+                <span>Git, Docker, Firebase, Supabase, MongoDB, PostgreSQL, Cloudflare Workers</span>
+            </div>
+        </div>
     </section>
 
     <section>
         <h2>EXPERIENCE</h2>
 
-        <div class="experience-block">
-            <div class="experience-title">React Developer Intern</div>
-            <div class="experience-subtitle">Sentienla QualityAI — Remote &bull; 06/2025 – Present</div>
-            <ul>
-                <li>Redesigned company website using React and Tailwind for better usability and performance.</li>
-                <li>Built 8 user-facing QA interfaces serving 500+ daily users.</li>
-            </ul>
+        <div class="item-header">
+            <div>
+                <span class="item-title">React Developer Intern</span> | Sentienta QualityAI
+            </div>
+            <div class="item-date">Jun 2025 – Aug 2025, Jun 2026 – Present</div>
         </div>
+        <ul>
+            <li>Enhanced enterprise layout usability for 500+ daily active users by redesigning the core web infrastructure using React and Tailwind CSS.</li>
+            <li>Accelerated internal QA workflows by architecting and deploying 8 highly responsive, data-intensive QA interfaces.</li>
+        </ul>
 
-        <div class="experience-block">
-            <div class="experience-title">Full Stack Developer</div>
-            <div class="experience-subtitle">BuildXLayer — Remote / Hybrid &bull; 11/2024 – 04/2025</div>
-            <ul>
-                <li>Developed and maintained scalable full-stack web applications using the MERN stack.</li>
-                <li>Engineered robust RESTful backend APIs with Node.js and Express.</li>
-                <li>Built responsive, high-performance user interfaces with React and Tailwind CSS.</li>
-                <li>Collaborated with cross-functional teams to implement new features and resolve bugs.</li>
-                <li>Reduced average query time by 40% through MongoDB index optimization.</li>
-            </ul>
+        <div class="item-header">
+            <div>
+                <span class="item-title">Full Stack Developer</span> | BuildXLayer
+            </div>
+            <div class="item-date">Nov 2024 – Apr 2025</div>
         </div>
+        <ul>
+            <li>Reduced average database query execution time by 40% by implementing strategic MongoDB index optimization and schema redesigns.</li>
+            <li>Supported high-performance MERN stack applications with minimal latency by engineering robust RESTful backend APIs using Node.js and Express.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>OPEN SOURCE CONTRIBUTIONS</h2>
+        
+        <div class="item-header">
+            <div>
+                <span class="item-title">Open Source Contributor</span> | ZIO, Tari Aiteen, OWASP Nest
+            </div>
+            <div class="item-date">Feb 2026 – Present</div>
+        </div>
+        <ul>
+            <li>Enhanced platform stability by resolving critical CI regressions and modernizing core backend components within the ZIO/ZIO-Blocks ecosystem.</li>
+            <li>Significantly reduced manual localization overhead by engineering a robust, automated i18n translation pipeline for Tari Aiteen.</li>
+            <li>Engineered and merged critical core logic improvements into OWASP Nest, CircuitVerse, and TensorMap by resolving complex open architectural issues.</li>
+        </ul>
     </section>
 
     <section>
         <h2>PROJECTS</h2>
-        <ul>
-            <li class="project-item"><strong>ColdEmailAI</strong> — AI-powered outreach automation system that sends
-                personalized cold emails to 10-15 companies daily with A/B subject testing, reply detection & AI
-                categorization, bounce monitoring, smart follow-ups, and a real-time analytics dashboard. Sent 200+
-                emails autonomously. Python, Next.js, Gmail API, OpenRouter AI, SQLite, Tailwind CSS.</li>
-            <li class="project-item"><strong>AI Powered Resume Reviewer</strong> — FastAPI, React, OpenAI API, NLP.
-                Full-stack AI tool performing automatic resume analysis, skill gap extraction, ATS scoring, and
-                GPT-powered coaching.</li>
-            <li class="project-item"><strong>GradTrack — SGPA & Placement Companion</strong> — React Native / Expo.
-                Mobile application to track SGPA/CGPA, academic attendance, and log placement activities natively.</li>
-            <li class="project-item"><strong>FactForge (Google Gen AI Hackathon)</strong> — Python, Google Gemini.
-                AI-driven fact-checking and verification tool utilizing advanced LLMs.</li>
-            <li class="project-item"><strong>SkillSwap</strong> — MongoDB, Express, React, Node.js. Peer-to-peer skill
-                exchange platform with 50+ registered users and real-time matching algorithm.</li>
-            <li class="project-item"><strong>Medicare Dashboard</strong> — Healthcare app (React + Flask + SQL Server):
-                booking, analytics, auth.</li>
-            <li class="project-item"><strong>Spotify-Style Music Player</strong> — Full-stack (React + Flask). Jamendo
-                API integration; playlists, search, shuffle/repeat.</li>
-        </ul>
-    </section>
+        
+        <div style="margin-bottom: 8px;">
+            <div class="item-header">
+                <div>
+                    <span class="project-title">MorphOS</span> <span class="project-tech">| Next.js, Three.js, Framer Motion, Gemini 2.0 Flash Vision</span>
+                </div>
+            </div>
+            <ul>
+                <li>Engineered a fully immersive, browser-based Generative Operating System capable of real-time application synthesis using WebGL shaders and LLMs.</li>
+                <li>Achieved instant code generation from UI screenshots by implementing a multimodal visual compilation pipeline and native IDE subsystems.</li>
+                <li>Built at the MLH AI Hackfest, demonstrating advanced spatial sandbox concepts and dynamic UI generation.</li>
+            </ul>
+        </div>
 
-    <section>
-        <h2>CERTIFICATIONS & HACKATHONS</h2>
-        <ul>
-            <li>Cleared internal round — Smart India Hackathon (SIH)</li>
-            <li>CSA Hackathon — UPES (participant)</li>
-            <li>Protorush Hackathon (participant)</li>
-            <li>Google Gen AI Hackathon (participant)</li>
-            <li>Bhartiya Antriksh Hackathon — ISRO (participant)</li>
-            <li>Cyber Security Workshop — IIT Roorkee (attendee)</li>
-            <li>AWS Community Day (attendee)</li>
-        </ul>
-    </section>
+        <div style="margin-bottom: 8px;">
+            <div class="item-header">
+                <div>
+                    <span class="project-title">ColdEmailAI</span> <span class="project-tech">| Next.js, Python, OpenRouter AI</span>
+                </div>
+            </div>
+            <ul>
+                <li>Automated the generation of 10-15 highly contextual emails daily by integrating OpenRouter models to deeply analyze target company data.</li>
+                <li>Improved B2B outreach efficiency by developing an end-to-end AI automation tool that intelligently researches and drafts personalized cold emails.</li>
+            </ul>
+        </div>
 
-    <section>
-        <h2>POSITION OF RESPONSIBILITY</h2>
-        <ul>
-            <li>Technical Core — Contributor, GDG UPES</li>
-            <li>Events Member, Sphurit UPES</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>ACHIEVEMENTS</h2>
-        <ul>
-            <li>100+ LeetCode problems solved</li>
-            <li>Interests: Speedcubing (17.62s avg), competitive gaming</li>
-        </ul>
+        <div style="margin-bottom: 8px;">
+            <div class="item-header">
+                <div>
+                    <span class="project-title">GradTrack</span> <span class="project-tech">| React Native, Expo, TypeScript</span>
+                </div>
+            </div>
+            <ul>
+                <li>Improved daily academic planning for university students by building a cross-platform mobile application to seamlessly track SGPA/CGPA trajectories and class attendance.</li>
+                <li>Engineered a highly responsive, accessible cross-platform UI achieving native-like performance using React Native and Expo.</li>
+            </ul>
+        </div>
     </section>
 
 </body>
-
 </html>

@@ -456,28 +456,9 @@ function initCodePlayground() {
 
 // ===================== GITHUB HEATMAP =====================
 function initGitHubHeatmap() {
-  const container = document.getElementById('githubHeatmap');
-  if (!container) return;
-
-  // Generate a simulated heatmap (52 weeks × 7 days)
-  const weeks = 52;
-  const days = 7;
-  for (let w = 0; w < weeks; w++) {
-    for (let d = 0; d < days; d++) {
-      const cell = document.createElement('div');
-      cell.className = 'heatmap-cell';
-      // Simulate activity with weighted randomness
-      const rand = Math.random();
-      let opacity;
-      if (rand < 0.35) opacity = 0.05;
-      else if (rand < 0.55) opacity = 0.15;
-      else if (rand < 0.75) opacity = 0.35;
-      else if (rand < 0.9) opacity = 0.6;
-      else opacity = 0.9;
-      cell.style.opacity = opacity;
-      cell.title = `${Math.floor(opacity * 10)} contributions`;
-      container.appendChild(cell);
-    }
+  const container = document.querySelector('.github-heatmap.calendar');
+  if (container && typeof GitHubCalendar !== 'undefined') {
+    GitHubCalendar(".github-heatmap.calendar", "Ojas2095", { responsive: true });
   }
 
   // Fetch real GitHub stats

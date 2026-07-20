@@ -10,10 +10,10 @@ const path = require('path');
         const filePath = `file:///${path.resolve(__dirname, 'Resume_Ojaswee_Upadhyay.html').replace(/\\/g, '/')}`;
         console.log(`Loading: ${filePath}`);
 
-        await page.goto(filePath, { waitUntil: 'networkidle0' });
+        await page.goto(filePath, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
         // Generate PDF
-        const pdfPath = path.resolve(__dirname, 'OjasweeUpadhyay_2025_Resume.pdf');
+        const pdfPath = path.resolve(__dirname, 'OjasweeUpadhyay_2026_Resume.pdf');
         await page.pdf({
             path: pdfPath,
             format: 'A4',
