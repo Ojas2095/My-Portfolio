@@ -31,16 +31,18 @@
   --ink-panel: #e8e7e1;
   --ink-soft: #deded7;
   --paper: #101214;
-  --paper-dim: #555c57;
-  --paper-faint: #858a84;
+  --paper-dim: #465049;
+  --paper-faint: #626b63;
   --line: rgba(16, 18, 20, .14);
   --line-strong: rgba(16, 18, 20, .28);
-  --acid: #568c00;
+  --acid: #4d7800;
   --acid-dim: rgba(86, 140, 0, .14);
   --orange: #c9492d;
   --blue: #2f64bd;
   --pink: #9b4d91;
 }
+
+[data-theme="light"] .button-primary { color: #fff; }
 
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; font-size: 16px; }

@@ -156,9 +156,13 @@ function initCommandMenu() {
   close?.addEventListener('click', hide);
   overlay.addEventListener('click', event => { if (event.target === overlay) hide(); });
   dialog?.addEventListener('click', event => event.stopPropagation());
+  const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   input.addEventListener('input', () => {
-    const query = input.value.toLowerCase().trim();
-    items.forEach(item => { item.hidden = query && !item.textContent.toLowerCase().includes(query); });
+    const query = normalize(input.value);
+    items.forEach(item => {
+      const searchable = normalize(`${item.textContent} ${item.dataset.search || ''}`);
+      item.hidden = Boolean(query && !searchable.includes(query));
+    });
     selected = 0;
     highlight();
   });

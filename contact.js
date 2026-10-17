@@ -7,6 +7,7 @@
     const status = document.getElementById('formStatus');
     const submitBtn = document.getElementById('submitBtn');
     if (!form) return;
+    const defaultButtonMarkup = submitBtn ? submitBtn.innerHTML : '';
 
     // ---- CONFIGURATION ----
     // Sign up free at https://www.emailjs.com
@@ -66,7 +67,7 @@
                 showStatus('✓ Message sent! (Demo mode — configure EmailJS to enable real emails)', 'success');
                 form.reset();
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Send Message';
+                submitBtn.innerHTML = defaultButtonMarkup;
                 lastSubmit = Date.now();
             }, 1200);
             return;
@@ -82,7 +83,7 @@
             showStatus('Failed to send. Please email me directly at ojaswee2095@gmail.com', 'error');
         } finally {
             submitBtn.disabled = false;
-            submitBtn.textContent = 'Send Message';
+            submitBtn.innerHTML = defaultButtonMarkup;
         }
     });
 
